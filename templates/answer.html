@@ -1,0 +1,36 @@
+{% block content %}
+
+<head>
+  <style type="text/css">
+  .bulb3 {
+    border-radius: 60px/60px; /* Создание эллипса */
+  }
+  .textt{
+    margin-top: 80px;
+    text-align:  center;
+  } 
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <title>Answer</title>
+</head>
+
+<body bgcolor="white">
+  <div class="w3-bar w3-black">
+          <a href="http://127.0.0.1:5000/" class= "w3-wide w3-hover-aqua bulb3 w3-bar-item w3-button" target = "_self"><font size="10">Back</a>
+  </div>
+  <div class= "w3-wide textt">
+    {% if param == 1  %}
+        <font size="515" color="black"><br>WOW! Congratulations! We can give you a loan</font>
+    {% endif %}
+    {% if param == 0  %}
+        <font size="515" color="black"><br>Sorry.... We can`t give you a loan</font>
+    {% endif %}
+  </div><br><br><br>
+  <div class="w3-display-middle">
+     <div>
+      <a href="http://127.0.0.1:5000/description" class= "w3-wide w3-hover-aqua w3-button bulb3 w3-jumbo w3-block" target = "_self"><font color="black">why this answer?</a>
+    </div>  
+  </div>  
+</body>
+
+{%endblock %}

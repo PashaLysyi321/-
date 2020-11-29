@@ -1,0 +1,51 @@
+{% block content %}
+
+<head>
+  <style type="text/css">
+  .bulb3 {
+    border-radius: 60px/60px; /* Создание эллипса */
+  }
+  .textt{
+    margin-top: 80px;
+    text-align:  center;
+  } 
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <title>Answer</title>
+</head>
+
+<body bgcolor="white">
+  <div class="w3-bar w3-black">
+          <a href="http://127.0.0.1:5000/" class= "w3-wide w3-hover-aqua bulb3 w3-bar-item w3-button" target = "_self"><font size="10">Back</a>
+  </div>
+  <div class= "w3-display-middle"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>I used logistic regression with next DB:</h2><br>
+    <h4>Data columns (total 13 columns):</h4>
+    <h4> #   Column             Non-Null Count  Dtype  </h4>
+    <h4>---  ------             --------------  -----  </h4>
+    <h4> 0   Loan_ID            614 non-null    object </h4>
+    <h4> 1   Gender             601 non-null    object </h4>
+    <h4> 2   Married            611 non-null    object </h4>
+    <h4> 3   Dependents         599 non-null    object </h4>
+    <h4> 4   Education          614 non-null    object </h4>
+    <h4> 5   Self_Employed      582 non-null    object </h4>
+    <h4> 6   ApplicantIncome    614 non-null    int64  </h4>
+    <h4> 7   CoapplicantIncome  614 non-null    float64</h4>
+    <h4> 8   LoanAmount         592 non-null    float64</h4>
+    <h4> 9   Loan_Amount_Term   600 non-null    float64</h4>
+    <h4> 10  Credit_History     564 non-null    float64</h4>
+    <h4> 11  Property_Area      614 non-null    object </h4>
+    <h4> 12  Loan_Status        614 non-null    object </h4>
+    <h4> dtypes: float64(4), int64(1), object(8)</h4><br>
+    <h2>Accuracy</h2><br>
+    <h4>Test Accuracy:  0.7703583061889251</h4>
+    <h4>Test F1 Score:  0.8445424476295479</h4>
+    <br>
+    <h2>For more information please read documentation</h2><br>
+    <div>
+      <a href="https://github.com/PashaLysyi321/-/blob/main/presentation.pptx" class= " w3-hover-aqua w3-button bulb3 w3-jumbo w3-block" target = "_self"><font color="black">Documentation</a>
+    </div><br><br>
+  </div>  
+</body>
+
+{%endblock %}
